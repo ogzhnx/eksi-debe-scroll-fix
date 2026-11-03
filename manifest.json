@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Ekşi DEBE - Sol Panel Sabitleyici",
+  "version": "2.0.0",
+  "description": "DEBE sol panel kaydırma konumunu entry geçişlerinde ve panel yenilenmelerinde korumayı dener.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://eksisozluk.com/*",
+        "*://www.eksisozluk.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
